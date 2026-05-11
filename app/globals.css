@@ -2,5 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { color-scheme: dark; }
-html, body { margin: 0; padding: 0; min-height: 100%; background: #0a0a0a; }
+:root {
+  /* S2 Dark Monolithic — luxury real estate palette */
+  --bg: #050505;
+  --bg-secondary: #0c0a08;
+  --bg-tertiary: #14110d;
+  --bg-accent: #1a1612;
+  --ink: #f4f1eb;
+  --primary: #c9a85a;       /* antique gold */
+  --accent: #d9c89a;        /* pale gold */
+  --muted: rgba(244, 241, 235, 0.55);
+  --hairline: rgba(244, 241, 235, 0.10);
+}
+
+html {
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body), "Inter Tight", system-ui, sans-serif;
+  overflow-x: clip;
+}
+
+::selection {
+  background: var(--primary);
+  color: var(--bg);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bg-accent);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Hairline divider utility */
+.hairline {
+  border-color: var(--hairline);
+}
+
+/* Film grain subtle overlay */
+.film-grain::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 100;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

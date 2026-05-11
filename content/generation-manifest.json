@@ -1,0 +1,45 @@
+{
+  "generation_id": "gen-2026-05-11-ridge",
+  "company": "Ridge",
+  "industry": "real-estate-luxury",
+  "build_mode": "landing-page-only",
+  "asset_mode": "live-generate",
+  "archetype": "A",
+  "style": "S2",
+  "scene_variant": "V-custom-house-tour",
+  "motion_variant": "M1-forward-dolly",
+  "card_variant": "CV4",
+  "hero_overlay_variant": "HO3",
+  "hero_text_pattern": "H2",
+  "hero_entrance": "E2",
+  "header_variant": "split-edges",
+  "footer_variant": "FT2",
+  "cta_variant": "CTA4",
+  "color_variant": "antique-gold-on-charcoal",
+  "color_profile": {
+    "luminance": "dark",
+    "text": {
+      "hero": "#f4f1eb",
+      "body": "rgba(244,241,235,0.75)",
+      "eyebrow": "rgba(201,168,90,0.85)",
+      "muted": "rgba(244,241,235,0.55)"
+    },
+    "card_overlay": {
+      "tint": "rgba(20,17,13,0.55)",
+      "blur": "2xl",
+      "border": "1px solid rgba(244,241,235,0.10)"
+    },
+    "tone_modifier": "premium-cinematic"
+  },
+  "voice_family": "V1-heritage-understated",
+  "narrative_shape": "building-tour",
+  "lighting_temperature": "warm-dusk",
+  "industry_video_tone": "real-estate-aspirational",
+  "scenes": [
+    { "id": "scene-1", "beats": ["Approach", "Threshold"], "motion": "forward dolly along driveway through entrance" },
+    { "id": "scene-2", "beats": ["Great Room"], "motion": "forward dolly through great room to glass wall" },
+    { "id": "scene-3", "beats": ["Terrace", "Resolution"], "motion": "backward dolly + tilt-up to wide establishing" }
+  ],
+  "properties": 6,
+  "rolled_at": "2026-05-11T14:10:00Z"
+}

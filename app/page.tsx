@@ -1,12 +1,19 @@
-// Placeholder — overwritten as soon as the agent emits the real homepage.
-export default function HomePage() {
+import CinematicHero from "@/components/CinematicHero";
+import TourBeats from "@/components/sections/TourBeats";
+import PortfolioGrid from "@/components/sections/PortfolioGrid";
+import Practice from "@/components/sections/Practice";
+import ContactCta from "@/components/sections/ContactCta";
+
+export const revalidate = 3600;
+
+export default function Home() {
   return (
-    <main style={{ minHeight: '100vh', display: 'grid', placeItems: 'center', background: '#0a0a0a', color: '#fff', fontFamily: 'system-ui, sans-serif' }}>
-      <div style={{ textAlign: 'center' }}>
-        <p style={{ fontSize: 12, letterSpacing: '0.22em', textTransform: 'uppercase', opacity: 0.4 }}>Building</p>
-        <h1 style={{ marginTop: 12, fontSize: 24, fontWeight: 600 }}>i want to build a landing page for a real estate company...</h1>
-        <p style={{ marginTop: 8, fontSize: 14, opacity: 0.55 }}>Sections will appear here as they're generated.</p>
-      </div>
+    <main>
+      <CinematicHero />
+      <TourBeats />
+      <PortfolioGrid />
+      <Practice />
+      <ContactCta />
     </main>
   );
 }
