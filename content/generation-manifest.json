@@ -12,7 +12,7 @@
   "hero_overlay_variant": "HO3",
   "hero_text_pattern": "H2",
   "hero_entrance": "E2",
-  "header_variant": "split-edges",
+  "header_variant": "pill-floating",
   "footer_variant": "FT2",
   "cta_variant": "CTA4",
   "color_variant": "antique-gold-on-charcoal",

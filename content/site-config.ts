@@ -217,7 +217,7 @@ export const siteConfig = {
     scrollDistance: 6,
   },
 
-  headerVariant: "split-edges",
+  headerVariant: "pill-floating",
 };
 
 export type SiteConfig = typeof siteConfig;

@@ -54,6 +54,19 @@ body {
   border-color: var(--hairline);
 }
 
+/* ── Floating pill header ── */
+.header-pill {
+  background: rgba(12, 10, 8, 0.55);
+  border-color: rgba(244, 241, 235, 0.08);
+  box-shadow:
+    0 1px 0 rgba(244, 241, 235, 0.04) inset,
+    0 12px 30px -12px rgba(0, 0, 0, 0.7);
+}
+.header-pill-wrap.is-scrolled .header-pill {
+  background: rgba(12, 10, 8, 0.78);
+  border-color: rgba(244, 241, 235, 0.14);
+}
+
 /* Film grain subtle overlay */
 .film-grain::after {
   content: "";
