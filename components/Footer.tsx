@@ -5,7 +5,7 @@
 
 import { siteConfig } from "@/content/site-config";
 
-type SocialIconName = "instagram" | "linkedin" | "pinterest" | "twitter" | "facebook";
+type SocialIconName = "instagram" | "linkedin" | "pinterest" | "twitter" | "facebook" | "whatsapp";
 
 function SocialIcon({ name }: { name: SocialIconName }) {
   const common = {
@@ -53,6 +53,13 @@ function SocialIcon({ name }: { name: SocialIconName }) {
       return (
         <svg {...common}>
           <path d="M14 8h2V5h-2a3 3 0 0 0-3 3v2H9v3h2v7h3v-7h2.2l.3-3H14V8.5a.5.5 0 0 1 .5-.5z" />
+        </svg>
+      );
+    case "whatsapp":
+      return (
+        <svg {...common}>
+          <path d="M20 12a8 8 0 1 1-3.1-6.3L20 4l-1.3 3.2A7.97 7.97 0 0 1 20 12z" />
+          <path d="M8.5 9.2c.2-.4.5-.4.7-.4h.5c.2 0 .4 0 .6.5l.7 1.6c.1.3 0 .5-.1.7l-.4.4c-.2.2-.3.4-.1.7.5.9 1.5 1.8 2.5 2.3.3.2.5.1.7-.1l.5-.6c.2-.2.4-.2.6-.1l1.5.7c.3.1.4.3.4.5 0 .5-.3 1.4-.8 1.7-.5.3-1.7.4-3-.3-1.6-.7-2.8-2-3.6-3.3-.8-1.3-1-2.4-.7-3v0z" />
         </svg>
       );
   }

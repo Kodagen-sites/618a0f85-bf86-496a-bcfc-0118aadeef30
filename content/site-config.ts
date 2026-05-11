@@ -31,6 +31,8 @@ export const siteConfig = {
       { label: "Instagram", href: "https://instagram.com/ridge.estate", icon: "instagram" as const },
       { label: "LinkedIn",  href: "https://linkedin.com/company/ridge-estate", icon: "linkedin"  as const },
       { label: "Pinterest", href: "https://pinterest.com/ridgeestate", icon: "pinterest" as const },
+      { label: "Facebook",  href: "https://facebook.com/ridgeestate", icon: "facebook" as const },
+      { label: "WhatsApp",  href: "https://wa.me/14155550142", icon: "whatsapp" as const },
     ],
   },
 

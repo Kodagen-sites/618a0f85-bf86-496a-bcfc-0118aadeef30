@@ -8,7 +8,6 @@
  * intersection sentinel — see app/layout.tsx).
  */
 
-import Link from "next/link";
 import { siteConfig } from "@/content/site-config";
 
 const navItems = [
@@ -26,12 +25,12 @@ export default function Header() {
         className="header-pill pointer-events-auto flex items-center gap-1 md:gap-2 rounded-full border backdrop-blur-2xl transition-all duration-500"
         style={{ padding: "6px 8px" }}
       >
-        <Link
+        <a
           href="/"
           className="px-3 md:px-4 py-2 font-display tracking-[0.28em] uppercase text-[11px] md:text-[12px] text-ink"
         >
           {siteConfig.brand.wordmark}
-        </Link>
+        </a>
 
         <nav className="hidden md:flex items-center gap-1 mx-2">
           {navItems.map((item) => (
