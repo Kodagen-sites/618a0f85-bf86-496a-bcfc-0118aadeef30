@@ -106,21 +106,26 @@ export default function Footer() {
               Estates that matter · since 2007
             </p>
             {siteConfig.brand.socials?.length ? (
-              <ul className="mt-5 flex items-center gap-3">
-                {siteConfig.brand.socials.map((s) => (
-                  <li key={s.label}>
-                    <a
-                      href={s.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={s.label}
-                      className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[color:var(--hairline)] text-ink/65 transition-colors hover:text-primary hover:border-primary/60"
-                    >
-                      <SocialIcon name={s.icon} />
-                    </a>
-                  </li>
-                ))}
-              </ul>
+              <div className="mt-6">
+                <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-ink/50 mb-3">
+                  Follow
+                </div>
+                <ul className="flex items-center gap-3">
+                  {siteConfig.brand.socials.map((s) => (
+                    <li key={s.label}>
+                      <a
+                        href={s.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={s.label}
+                        className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[color:var(--hairline)] text-ink/70 transition-colors hover:text-primary hover:border-primary/60"
+                      >
+                        <SocialIcon name={s.icon} />
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ) : null}
           </div>
 
