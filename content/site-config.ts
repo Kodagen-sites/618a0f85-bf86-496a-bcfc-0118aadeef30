@@ -146,6 +146,56 @@ export const siteConfig = {
     },
   ],
 
+  // Engagements — three tiers, priced quietly. V1 Heritage voice: restrained, specific, no checkmarks.
+  engagements: [
+    {
+      name: "Acquisition Brief",
+      eyebrow: "Buy with us",
+      priceLabel: "From 1.25%",
+      priceUnit: "of purchase price",
+      summary:
+        "Private representation for a single, considered purchase. Off-market access, slow when slow is the right pace.",
+      inclusions: [
+        "Off-market shortlist of three to seven properties",
+        "Architectural and structural diligence",
+        "Negotiation and close",
+        "One acquisition per engagement",
+      ],
+      ctaLabel: "Open a brief",
+    },
+    {
+      name: "Curated Listing",
+      eyebrow: "Sell with us",
+      priceLabel: "From 2.5%",
+      priceUnit: "of sale price",
+      summary:
+        "Full representation. We make a film, write the brief, and show it only to the eleven or twelve people who should see it.",
+      inclusions: [
+        "Cinematic film and editorial photography",
+        "Hand-curated buyer list — no MLS, no open houses",
+        "Private viewings, by appointment",
+        "Twelve-month engagement",
+      ],
+      ctaLabel: "Discuss a listing",
+      featured: true,
+    },
+    {
+      name: "Architectural Counsel",
+      eyebrow: "Before the offer",
+      priceLabel: "From $25,000",
+      priceUnit: "single engagement",
+      summary:
+        "A sober pre-purchase conversation. What the house is, what it isn't, and whether the architect's first idea is the right one.",
+      inclusions: [
+        "Single-property structural and design review",
+        "Architect introduction, where appropriate",
+        "Written counsel, two pages",
+        "No commission, no obligation to transact",
+      ],
+      ctaLabel: "Request counsel",
+    },
+  ],
+
   // Stats — only meaningful, not fabricated marketing claims
   stats: [
     { value: "11", label: "Estates currently represented" },
