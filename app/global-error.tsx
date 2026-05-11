@@ -1,12 +1,4 @@
-"use client";
-
-export default function GlobalError({
-  error,
-  reset,
-}: {
-  error: Error & { digest?: string };
-  reset: () => void;
-}) {
+export default function GlobalError() {
   return (
     <html lang="en">
       <body
@@ -44,8 +36,8 @@ export default function GlobalError({
           >
             Something has gone quietly wrong.
           </h1>
-          <button
-            onClick={() => reset()}
+          <a
+            href="/"
             style={{
               display: "inline-block",
               padding: "12px 24px",
@@ -55,11 +47,11 @@ export default function GlobalError({
               fontSize: 11,
               letterSpacing: "0.28em",
               textTransform: "uppercase",
-              cursor: "pointer",
+              textDecoration: "none",
             }}
           >
-            Try Again
-          </button>
+            Return Home
+          </a>
         </div>
       </body>
     </html>

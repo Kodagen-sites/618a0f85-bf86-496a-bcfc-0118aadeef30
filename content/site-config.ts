@@ -27,6 +27,11 @@ export const siteConfig = {
     email: "hello@ridge.estate",
     phone: "+1 (415) 555-0142",
     location: "San Francisco · Aspen · Lake Como",
+    socials: [
+      { label: "Instagram", href: "https://instagram.com/ridge.estate", icon: "instagram" as const },
+      { label: "LinkedIn",  href: "https://linkedin.com/company/ridge-estate", icon: "linkedin"  as const },
+      { label: "Pinterest", href: "https://pinterest.com/ridgeestate", icon: "pinterest" as const },
+    ],
   },
 
   hero: {
