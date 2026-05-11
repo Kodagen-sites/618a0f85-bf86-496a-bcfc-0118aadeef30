@@ -71,17 +71,24 @@ export default function CinematicHero() {
             transform: `translateY(${(1 - hero) * 24}px)`,
           }}
         >
-          <div className="max-w-7xl mx-auto">
-            <div className="font-mono text-[10.5px] uppercase tracking-[0.5em] text-primary/85 mb-6">
+          <div
+            className="absolute inset-x-0 bottom-0 h-[85%] pointer-events-none"
+            style={{
+              background:
+                "linear-gradient(180deg, rgba(5,5,5,0) 0%, rgba(5,5,5,0.45) 45%, rgba(5,5,5,0.82) 100%)",
+            }}
+          />
+          <div className="relative max-w-7xl mx-auto" style={{ textShadow: "0 1px 24px rgba(0,0,0,0.55)" }}>
+            <div className="font-mono text-[10.5px] uppercase tracking-[0.5em] text-primary mb-6">
               {siteConfig.hero.eyebrow}
             </div>
 
-            <h1 className="font-display font-light text-5xl sm:text-6xl md:text-8xl leading-[0.95] tracking-tight max-w-5xl">
+            <h1 className="font-display font-light text-5xl sm:text-6xl md:text-8xl leading-[0.95] tracking-tight max-w-5xl text-white">
               {siteConfig.hero.h1.map((line, i) => (
                 <span
                   key={i}
                   className={`inline ${
-                    line.accent ? "italic text-primary" : "text-ink"
+                    line.accent ? "italic text-primary" : "text-white"
                   }`}
                 >
                   {line.text}
@@ -89,7 +96,7 @@ export default function CinematicHero() {
               ))}
             </h1>
 
-            <p className="mt-8 max-w-xl font-body text-base md:text-lg text-ink/75 leading-relaxed">
+            <p className="mt-8 max-w-xl font-body text-base md:text-lg text-white/90 leading-relaxed">
               {siteConfig.hero.subhead}
             </p>
 
@@ -103,7 +110,7 @@ export default function CinematicHero() {
               </a>
               <a
                 href={siteConfig.hero.secondaryCta.href}
-                className="inline-flex items-center gap-3 px-8 py-4 border border-ink/30 text-ink font-mono text-[10.5px] uppercase tracking-[0.32em] hover:border-primary hover:text-primary transition-colors"
+                className="inline-flex items-center gap-3 px-8 py-4 border border-white/50 text-white bg-black/25 backdrop-blur-sm font-mono text-[10.5px] uppercase tracking-[0.32em] hover:border-primary hover:text-primary transition-colors"
               >
                 {siteConfig.hero.secondaryCta.label}
               </a>
