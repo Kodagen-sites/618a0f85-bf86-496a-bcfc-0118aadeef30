@@ -13,12 +13,14 @@
     "gen:all": "npm run gen:images && npm run gen:videos && npm run gen:frames"
   },
   "dependencies": {
-    "next": "15.0.3",
+    "next": "^16.2.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "framer-motion": "^11.11.0",
     "lucide-react": "^0.460.0",
-    "gsap": "^3.13.0"
+    "gsap": "^3.13.0",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.5"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
