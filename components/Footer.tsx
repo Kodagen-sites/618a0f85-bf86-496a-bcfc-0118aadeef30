@@ -103,40 +103,9 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Contact strip — full width */}
-        <div className="col-span-12 mt-12 pt-8 border-t border-[color:var(--hairline)] flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-          <div>
-            <div className="font-display text-[32px] tracking-[0.32em] text-ink mb-2">
-              {siteConfig.brand.wordmark}
-            </div>
-            <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-ink/55">
-              Estates that matter · since 2007
-            </p>
-            {siteConfig.brand.socials?.length ? (
-              <div className="mt-6">
-                <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-ink/50 mb-3">
-                  Follow
-                </div>
-                <ul className="flex items-center gap-3">
-                  {siteConfig.brand.socials.map((s) => (
-                    <li key={s.label}>
-                      <a
-                        href={s.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={s.label}
-                        className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[color:var(--hairline)] text-ink/70 transition-colors hover:text-primary hover:border-primary/60"
-                      >
-                        <SocialIcon name={s.icon} />
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
-          </div>
-
-          <div className="flex flex-col gap-1 font-body text-sm text-ink/70 md:text-right">
+        {/* Contact strip — full width, single hairline row */}
+        <div className="col-span-12 mt-12 pt-6 border-t border-[color:var(--hairline)] flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+          <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8 font-body text-sm text-ink/70">
             <a
               href={`mailto:${siteConfig.brand.email}`}
               className="hover:text-primary transition-colors"
@@ -149,10 +118,28 @@ export default function Footer() {
             >
               {siteConfig.brand.phone}
             </a>
-            <p className="text-ink/45 text-[12px]">
-              © {new Date().getFullYear()} Ridge Holdings, LLC
+            <p className="text-ink/45 text-[12px] font-mono uppercase tracking-[0.3em]">
+              © {new Date().getFullYear()} {siteConfig.brand.wordmark} Holdings, LLC
             </p>
           </div>
+
+          {siteConfig.brand.socials?.length ? (
+            <ul className="flex items-center gap-3">
+              {siteConfig.brand.socials.map((s) => (
+                <li key={s.label}>
+                  <a
+                    href={s.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={s.label}
+                    className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[color:var(--hairline)] text-ink/70 transition-colors hover:text-primary hover:border-primary/60"
+                  >
+                    <SocialIcon name={s.icon} />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          ) : null}
         </div>
       </div>
     </footer>
