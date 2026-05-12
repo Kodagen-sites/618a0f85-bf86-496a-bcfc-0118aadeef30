@@ -17,7 +17,7 @@ const navItems = [
   { label: "Tour", href: "#tour" },
   { label: "Practice", href: "#practice" },
   { label: "Engagements", href: "#engagements" },
-  { label: "Contact", href: "#contact" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Header() {
@@ -75,7 +75,7 @@ export default function Header() {
         </button>
 
         <a
-          href="#contact"
+          href="/contact"
           className="px-3 md:px-4 py-2 rounded-full bg-primary text-bg font-mono uppercase tracking-[0.22em] text-[10px] hover:brightness-110 transition-all"
         >
           <span className="hidden md:inline">Private Viewing</span>
